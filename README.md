@@ -1,18 +1,22 @@
-# quarkus-rest-api
+# Quarkus Kotlin Sample
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This project is a minimalistic example demonstrating how to build a RESTful API using [Quarkus](https://quarkus.io/) with [Kotlin](https://kotlinlang.org/). It showcases the integration of Kotlin with Quarkus, including REST endpoints, JSON serialization, and native image generation using GraalVM.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+## 🚀 Features
 
-## Running the application in dev mode
+- Built with Kotlin and Quarkus
+- RESTful API using JAX-RS (RESTEasy)
+- JSON serialization with JSON-B
+- Native image generation via GraalVM
+- Docker support for containerized deployment
 
-You can run your application in dev mode that enables live coding using:
+## 🛠 Prerequisites
 
-```shell script
-./gradlew quarkusDev
-```
+Ensure you have the following installed:
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+- Java 1.8 or later
+- [GraalVM](https://www.graalvm.org/docs/getting-started/#install-graalvm) (for native image generation)
+- [Docker](https://www.docker.com/get-started)
 
 ## Packaging and running the application
 
@@ -51,7 +55,16 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./build/quarkus-rest-api-1.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/gradle-tooling>.
+
+## 🧪 Running in Development Mode
+Quarkus offers a development mode that enables live coding with background compilation.
+   ```bash
+   ./gradlew quarkusDev
+```
+Access the application at http://localhost:8080
+
+Dev UI available in dev mode at <http://localhost:8080/q/dev/>.
+
 
 ## Related Guides
 
@@ -63,11 +76,3 @@ If you want to learn more about building native executables, please consult <htt
 - RESTEasy Classic ([guide](https://quarkus.io/guides/resteasy)): REST endpoint framework implementing Jakarta REST and
   more
 - JDBC Driver - PostgreSQL ([guide](https://quarkus.io/guides/datasource)): Connect to the PostgreSQL database via JDBC
-
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
