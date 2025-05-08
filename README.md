@@ -68,6 +68,7 @@ Dev UI available in dev mode at <http://localhost:8080/q/dev/>.
 
 ## Related Guides
 
+- Full Tutorial: https://www.youtube.com/watch?v=JuqVCjxXOrU
 - REST resources for Hibernate ORM with Panache ([guide](https://quarkus.io/guides/rest-data-panache)): Generate Jakarta
   REST resources for your Hibernate Panache entities and repositories
 - SmallRye OpenAPI ([guide](https://quarkus.io/guides/openapi-swaggerui)): Document your REST APIs with OpenAPI - comes
