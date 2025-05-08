@@ -14,6 +14,8 @@ val quarkusPlatformArtifactId: String by project
 val quarkusPlatformVersion: String by project
 
 dependencies {
+    implementation("io.github.microutils:kotlin-logging:3.0.5") // Or latest version
+    implementation("org.slf4j:slf4j-api:2.0.9")
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-hibernate-orm-rest-data-panache")
     implementation("io.quarkus:quarkus-smallrye-openapi")
